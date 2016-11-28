@@ -24,6 +24,7 @@ TextRequest.prototype._headers = function() {
     var headers = TextRequest.super_.prototype._headers.apply(this, arguments);
 
     headers['Content-Type'] = 'application/json; charset=utf-8';
+    headers['devMode'] = 'true';
 
     return headers;
 };
